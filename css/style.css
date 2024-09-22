@@ -14,10 +14,26 @@ h1{
     color: #333;
 }
 
+botones{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
 button{
     padding: 15px 30px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    border-radius: 70px;
+    font-size: 20px;
     cursor: pointer;
+}
+
+button.usuario{
+    background-color: #dddddd;
+    color: #333;
+}
+
+button.admin{
+    background-color: #4caf50;
+    color: #fff;
 }

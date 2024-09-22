@@ -1,24 +1,81 @@
 body{
-    font-family: 'Arial', sans-serif;
+    height: 100%;
+    background-image: url("img/UNIDAD_01.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 header{
-    display: flex;
-    align-items: center;
-    background-color: #ffffff;
+    position: relative;
+    height: 100px;
+}
+
+.logoUnidad{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+.menu-lateral{
+    width: 15%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.menu-lateral ul{
+    list-style: none;
+}
+
+.menu-lateral ul li{
+    margin: 20px 0;
+}
+
+.menu-lateral ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.5s;
+}
+
+.menu-lateral ul li a:hover{
+    background-color: #575757;
+}
+
+.contenido{
+    margin-left: 22%;
+    padding: 40px;
+    color: black;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+h2{
+    width: 100%;
+    background-color: brown;
+    color: white;
     padding: 10px;
-    position: relative;
+    margin-bottom: 20px;
 }
 
-.logoUnidad{
-    display: flex;
-    align-items: center;
+p{
+    font-size: 18px;
+    line-height: 1,6;
+    color: #333;
 }
-
-.logoUnidad{
-    position: relative;
-}
-
 
 .botones{
     display: flex;
@@ -42,66 +99,4 @@ button.usuario{
 button.admin{
     background-color: #4caf50;
     color: #fff;
-}
-/* Estilos del cuerpo de la página */
-body {
-    height: 100vh;
-    background-image: url('tu-imagen-fondo.jpg'); /* Cambia esta ruta por la imagen que quieras usar */
-    background-size: cover; /* Asegura que la imagen de fondo cubra toda la pantalla */
-    background-position: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-/* Menú Lateral */
-.menu-lateral {
-    width: 250px;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    position: fixed; /* Se mantiene fijo al desplazarse */
-    top: 0;
-    left: 0;
-    padding-top: 20px;
-}
-
-.menu-lateral ul {
-    list-style: none;
-}
-
-.menu-lateral ul li {
-    margin: 20px 0;
-}
-
-.menu-lateral ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: background 0.3s;
-}
-
-.menu-lateral ul li a:hover {
-    background-color: #575757; /* Color al pasar el ratón por encima */
-}
-
-/* Contenido Central */
-.contenido {
-    margin-left: 270px; /* Espacio para que el contenido no se superponga con el menú */
-    padding: 40px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para destacar el texto */
-    border-radius: 10px;
-    max-width: 800px;
-}
-
-/* Estilos del título principal */
-.contenido h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-/* Estilos del párrafo */
-.contenido p {
-    font-size: 1.2rem;
 }

@@ -1,23 +1,24 @@
+h1{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 72px;
+}
+
 body{
     font-family: 'Arial', sans-serif;
-    background-color: #f3f3f3;
 }
 
 header{
     display: flex;
     align-items: center;
-    background-color: #f3f3f3;
     padding: 10px;
 }
 
-contedor{
+.contedor{
     position: relative;
 }
-h1{
-    color: #333;
-}
 
-botones{
+
+.botones{
     display: flex;
     justify-content: center;
     gap: 20px;

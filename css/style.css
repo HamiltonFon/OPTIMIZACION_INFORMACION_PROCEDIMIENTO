@@ -54,13 +54,13 @@ body {
 
 /* Menú Lateral */
 .menu-lateral {
-    width: 250px;
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
-    position: fixed; /* Se mantiene fijo al desplazarse */
-    top: 0;
-    left: 0;
-    padding-top: 20px;
+    width: 250px; /* Define el ancho del menú lateral */
+    height: 100vh; /* El menú lateral ocupará toda la altura de la ventana */
+    background-color: #333;
+    position: fixed; /* Fija el menú lateral en su posición, de modo que no se desplaza al hacer scroll */
+    top: 0; /* El menú se coloca en la parte superior de la ventana */
+    left: 0; /* El menú se coloca en el lado izquierdo de la ventana */
+    padding-top: 20px; /* Añade un margen superior interno para separar los elementos del menú */
 }
 
 .menu-lateral ul {
@@ -68,7 +68,7 @@ body {
 }
 
 .menu-lateral ul li {
-    margin: 20px 0;
+    margin: 90px 0;
 }
 
 .menu-lateral ul li a {

@@ -93,4 +93,69 @@ button.usuario{
 button.admin{
     background-color: #4caf50;
     color: #fff;
+<<<<<<< HEAD
+}
+/* Estilos del cuerpo de la página */
+body {
+    height: 100vh;
+    background-image: url('tu-imagen-fondo.jpg'); /* Cambia esta ruta por la imagen que quieras usar */
+    background-size: cover; /* Asegura que la imagen de fondo cubra toda la pantalla */
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Menú Lateral */
+.menu-lateral {
+    width: 250px; /* Define el ancho del menú lateral */
+    height: 100vh; /* El menú lateral ocupará toda la altura de la ventana */
+    background-color: #333;
+    position: fixed; /* Fija el menú lateral en su posición, de modo que no se desplaza al hacer scroll */
+    top: 0; /* El menú se coloca en la parte superior de la ventana */
+    left: 0; /* El menú se coloca en el lado izquierdo de la ventana */
+    padding-top: 20px; /* Añade un margen superior interno para separar los elementos del menú */
+}
+
+.menu-lateral ul {
+    list-style: none;
+}
+
+.menu-lateral ul li {
+    margin: 90px 0;
+}
+
+.menu-lateral ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #575757; /* Color al pasar el ratón por encima */
+}
+
+/* Contenido Central */
+.contenido {
+    margin-left: 270px; /* Espacio para que el contenido no se superponga con el menú */
+    padding: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para destacar el texto */
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+/* Estilos del título principal */
+.contenido h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Estilos del párrafo */
+.contenido p {
+    font-size: 1.2rem;
+=======
+>>>>>>> a823ea6eb8e05fcfaea091d07891b68732bb7a9b
 }

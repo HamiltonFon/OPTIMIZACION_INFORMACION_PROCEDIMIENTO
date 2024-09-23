@@ -1,28 +1,11 @@
-/* Estilos para el encabezado (header) */
-.header {
-    display: flex; /* Usa Flexbox para colocar los elementos hijos en línea horizontalmente */
-    justify-content: space-between; /* Distribuye los elementos de manera que haya espacio entre ellos */
-    align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
-    width: 80%; /* El ancho del contenedor del encabezado ocupa el 80% del ancho disponible */
-    padding: 10px; /* Añade un espacio interior de 10px alrededor del contenido del encabezado */
-    background-color: #f8f8f8; /* Color de fondo gris muy claro para el encabezado */
-    height: 100%; /* Establece la altura del encabezado para que ocupe todo el espacio disponible */
-}
-
-/* Estilos para el logo dentro del encabezado */
-.logo {
-    width: 50px; /* Define el ancho de la imagen del logo a 50px */
-}
-
-/* Estilos para el título dentro del encabezado */
-.titulo {
-    margin: 0; /* Elimina cualquier margen alrededor del título */
-    font-size: 24px; /* Tamaño de fuente de 24px para que el título sea más grande */
-}
+/*SECCION DE CODIGO PARA EL MENU LATERAL*/
 
 .menu-lateral {
-    width: 200px; /* Ancho del menú lateral */
+    width: 150px; /* Ancho del menú lateral */
     height: 100vh; /* Altura del menú lateral ocupando toda la ventana */
+
+   
+    
     background-image: url(/img/Bandera_colombia.png); /* Ruta de la imagen que quieres usar */
     background-size: cover; /* Hace que la imagen cubra todo el menú */
     background-position: center; /* Centra la imagen en el menú */
@@ -39,20 +22,23 @@
 /* Elimina los puntos de lista o viñetas predeterminados en los elementos de la lista */
 .menu-lateral ul {
     list-style: none; /* Elimina los estilos de lista predeterminados (viñetas o números) */
+    padding-left: 5px; /* Elimina cualquier relleno en el lado izquierdo del contenedor */
+    padding-right: 5px; /* Añade espacio a la derecha del contenido del menú */
 }
 
 /* Define el espaciado entre los elementos de la lista dentro del menú lateral */
 .menu-lateral ul li {
-    margin: 90px 0; /* Añade un margen vertical de 90px entre cada elemento de la lista */
+    margin: 85px 0px; /* Añade un margen vertical de 90px entre cada elemento de la lista */
 }
 
 /* Estilos para los enlaces dentro de los elementos de la lista */
 .menu-lateral ul li a {
     color: white; /* Define el color del texto de los enlaces como blanco */
     text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
-    padding: 10px 20px; /* Añade un relleno interno de 10px en la parte superior/inferior y 20px en los lados del enlace */
+    padding: 10px 10px; /* Añade un relleno interno de 10px en la parte superior/inferior y 20px en los lados del enlace */
     display: block; /* Hace que los enlaces se comporten como bloques, ocupando todo el ancho del contenedor */
     transition: background 0.5s; /* Añade una transición suave de 0.5 segundos al cambiar el fondo al hacer hover */
+    text-align: center; /* Centra el texto dentro de los enlaces */
 }
 
 /* Estilo del enlace cuando se pasa el ratón por encima */
@@ -60,20 +46,35 @@
     background-color: #575757; /* Cambia el color de fondo del enlace al pasar el ratón a un gris oscuro (#575757) */
 }
 
-/* Estilos para la sección de contenido principal */
-.contenido {
-    width: 100%; /* El ancho del contenido ocupa el 100% del área disponible */
-    margin-left: 22%; /* Mueve el contenido hacia la derecha para dar espacio al menú lateral (22% del ancho de la ventana) */
-    padding: 40px; /* Añade un espacio interior de 40px alrededor del contenido */
-    color: black; /* Define el color del texto en negro */
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad (transparente) */
-    border-radius: 10px; /* Bordes redondeados de 10px en el contenido */
-    max-width: 800px; /* Establece un ancho máximo de 800px para que el contenido no se extienda demasiado en pantallas grandes */
+
+
+
+/*SECCION DEL LOGO/TITULO DE LA PAGINA CON FONDO ROJO*/
+
+/* Estilos para el encabezado (header) */
+.header {
+    display: flex; /* Usa Flexbox para colocar los elementos hijos en línea horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos de manera que haya espacio entre ellos */
+    align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
+    width: 80%; /* El ancho del contenedor del encabezado ocupa el 80% del ancho disponible */
+    padding: 10px; /* Añade un espacio interior de 10px alrededor del contenido del encabezado */
+    background-color: #f8f8f8; /* Color de fondo gris muy claro para el encabezado */
+    height: 100%; /* Establece la altura del encabezado para que ocupe todo el espacio disponible */
 }
 
-/* Estilos para el encabezado <h1> */
+/* Estilos para el logo dentro del encabezado */
+.logo {
+    margin-left: 140px; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
+    width: 1000px; /* Define el ancho de la imagen del logo a 50px */
+}
+
+/* Estilos para el título dentro del encabezado */
+.titulo {
+    margin: 0; /* Elimina cualquier margen alrededor del título */
+    font-size: 24px; /* Tamaño de fuente de 24px para que el título sea más grande */
+}
+/* Estilos para el encabezado <h1>*/
 h1 {
-    width: 150%; /* Hace que el ancho del encabezado sea más grande que el contenedor normal (150% del tamaño) */
     background-color: red; /* Fondo rojo para el encabezado */
     color: white; /* Texto en blanco */
     padding: 10px; /* Añade un espacio interior de 10px alrededor del texto */
@@ -87,11 +88,53 @@ p {
     color: #333; /* Color del texto en un gris oscuro */
 }
 
+
+
+
+/*SECCION PARA EL CONTENIDO CENTRAL DE LA PAGINA*/
+
+/* Estilos para la sección de contenido principal */
+.contenido {
+    width: 100%; /* El ancho del contenido ocupa el 100% del área disponible */
+    margin-left: 140px; /* Mueve el contenido hacia la derecha para dar espacio al menú lateral (22% del ancho de la ventana) */
+    padding: 40px; /* Añade un espacio interior de 40px alrededor del contenido */
+    color: black; /* Define el color del texto en negro */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad (transparente) */
+    border-radius: 10px; /* Bordes redondeados de 10px en el contenido */
+    max-width: 1097px; /* Establece un ancho máximo de 800px para que el contenido no se extienda demasiado en pantallas grandes */
+}
+
+/* Estilos del título principal dentro del contenido */
+.contenido h1 {
+    font-size: 3rem; /* Tamaño de fuente de 3 rem (aproximadamente 48px dependiendo de la configuración de la fuente base) */
+    margin-bottom: 20px; /* Añade un espacio de 20px debajo del título */
+}
+
+/* Estilos del párrafo dentro del contenido */
+.contenido p {
+    font-size: 1.2rem; /* Tamaño de fuente de 1.2 rem (aproximadamente 19px, según la configuración de la fuente base) */
+}
+
+.contenido {
+    background-image: url(/img/UPV_Persona.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center; /* Centra la imagen en la sección */
+    color: white; /* Cambia el color del texto para que sea visible sobre la imagen */
+    padding: 40px; /* Espaciado interno */
+    border-radius: 10px; /* Esquinas redondeadas (opcional) */
+    height: 300px; /* Altura fija para la sección (ajusta según tus necesidades) */
+}
+
+
+
+
+/*SECCION PARA LOS BOTONES INFERIORES DE LA PAGINA*/
+
 /* Estilos para un contenedor de botones */
 .botones {
     display: flex; /* Utiliza Flexbox para colocar los botones en fila horizontal */
     justify-content: center; /* Centra los botones horizontalmente */
-    gap: 20px; /* Añade un espacio de 20px entre cada botón */
+    gap: 200px; /* Añade un espacio de 20px entre cada botón */
 }
 
 /* Estilos generales para los botones */
@@ -114,38 +157,12 @@ button.admin {
     background-color: #4caf50; /* Fondo verde */
     color: #fff; /* Texto en blanco */
 }
-
-/* Estilos del cuerpo de la página */
-body {
-    height: 100vh; /* La altura del cuerpo ocupa el 100% de la vista de la pantalla */
-    background-image: url('tu-imagen-fondo.jpg'); /* Establece una imagen de fondo. Cambia 'tu-imagen-fondo.jpg' por la ruta de tu imagen */
-    background-size: cover; /* Hace que la imagen de fondo cubra completamente la pantalla, ajustándose si es necesario */
-    background-position: center; /* Centra la imagen de fondo en la pantalla */
-    display: flex; /* Usa Flexbox para alinear los elementos dentro del body */
-    justify-content: flex-start; /* Alinea los elementos horizontalmente al inicio (a la izquierda) */
-    align-items: center; /* Alinea los elementos verticalmente al centro */
-}
-
-/* Estilos del contenido central */
-.contenido {
-    margin-left: 270px; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
+.botones {
+    margin-left: 140px; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
     padding: 40px; /* Añade un relleno de 40px alrededor del contenido */
     color: white; /* Define el color del texto en blanco */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad, permitiendo ver parcialmente la imagen de fondo */
     border-radius: 10px; /* Bordes redondeados de 10px en el contenido */
-    max-width: 800px; /* Define un ancho máximo de 800px para que el contenido no se expanda demasiado en pantallas grandes */
+    max-width: 1097px; /* Define un ancho máximo de 800px para que el contenido no se expanda demasiado en pantallas grandes */
 }
-
-/* Estilos del título principal dentro del contenido */
-.contenido h1 {
-    font-size: 3rem; /* Tamaño de fuente de 3 rem (aproximadamente 48px dependiendo de la configuración de la fuente base) */
-    margin-bottom: 20px; /* Añade un espacio de 20px debajo del título */
-}
-
-/* Estilos del párrafo dentro del contenido */
-.contenido p {
-    font-size: 1.2rem; /* Tamaño de fuente de 1.2 rem (aproximadamente 19px, según la configuración de la fuente base) */
-}
-
-
 

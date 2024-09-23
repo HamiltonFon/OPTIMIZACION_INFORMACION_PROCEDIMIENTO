@@ -24,34 +24,44 @@ header{
     height: auto;
 }
 
-.menu-lateral{
-    width: 15%;
-    height: 100vh;
-    background-color: rgb(0, 0, 0, 0.7);
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding-top: 20px;
+.menu-lateral {
+    width: 200px; /* Ancho del menú lateral */
+    height: 100vh; /* Altura del menú lateral ocupando toda la ventana */
+    background-image: url(/img/Bandera_colombia.png); /* Ruta de la imagen que quieres usar */
+    background-size: cover; /* Hace que la imagen cubra todo el menú */
+    background-position: center; /* Centra la imagen en el menú */
+    position: fixed; /* Fija el menú lateral para que no se desplace */
+    top: 0; /* Alinea el menú al borde superior de la ventana */
+    left: 0; /* Alinea el menú al borde izquierdo */
+    padding-top: 20px; /* Espacio interno en la parte superior */
 }
 
-.menu-lateral ul{
-    list-style: none;
+.menu-lateral ul li a:hover {
+    background-color: #575757; /* Color al pasar el ratón por encima */
 }
 
-.menu-lateral ul li{
-    margin: 20px 0;
+/* Elimina los puntos de lista o viñetas predeterminados en los elementos de la lista */
+.menu-lateral ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados (viñetas o números) */
 }
 
-.menu-lateral ul li a{
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: background 0.5s;
+/* Define el espaciado entre los elementos de la lista dentro del menú lateral */
+.menu-lateral ul li {
+    margin: 90px 0; /* Añade un margen vertical de 90px entre cada elemento de la lista */
 }
 
-.menu-lateral ul li a:hover{
-    background-color: #575757;
+/* Estilos para los enlaces dentro de los elementos de la lista */
+.menu-lateral ul li a {
+    color: white; /* Define el color del texto de los enlaces como blanco */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    padding: 10px 20px; /* Añade un relleno interno de 10px en la parte superior/inferior y 20px en los lados del enlace */
+    display: block; /* Hace que los enlaces se comporten como bloques, ocupando todo el ancho del contenedor */
+    transition: background 0.5s; /* Añade una transición suave de 0.5 segundos al cambiar el fondo al hacer hover */
+}
+
+/* Estilo del enlace cuando se pasa el ratón por encima */
+.menu-lateral ul li a:hover {
+    background-color: #575757; /* Cambia el color de fondo del enlace al pasar el ratón a un gris oscuro (#575757) */
 }
 
 .contenido{
@@ -99,8 +109,8 @@ button.usuario{
 button.admin{
     background-color: #4caf50;
     color: #fff;
-<<<<<<< HEAD
 }
+
 /* Estilos del cuerpo de la página */
 body {
     height: 100vh;
@@ -112,36 +122,6 @@ body {
     align-items: center;
 }
 
-/* Menú Lateral */
-.menu-lateral {
-    width: 250px; /* Define el ancho del menú lateral */
-    height: 100vh; /* El menú lateral ocupará toda la altura de la ventana */
-    background-color: #333;
-    position: fixed; /* Fija el menú lateral en su posición, de modo que no se desplaza al hacer scroll */
-    top: 0; /* El menú se coloca en la parte superior de la ventana */
-    left: 0; /* El menú se coloca en el lado izquierdo de la ventana */
-    padding-top: 20px; /* Añade un margen superior interno para separar los elementos del menú */
-}
-
-.menu-lateral ul {
-    list-style: none;
-}
-
-.menu-lateral ul li {
-    margin: 90px 0;
-}
-
-.menu-lateral ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    display: block;
-    transition: background 0.3s;
-}
-
-.menu-lateral ul li a:hover {
-    background-color: #575757; /* Color al pasar el ratón por encima */
-}
 
 /* Contenido Central */
 .contenido {
@@ -162,6 +142,7 @@ body {
 /* Estilos del párrafo */
 .contenido p {
     font-size: 1.2rem;
-=======
->>>>>>> a823ea6eb8e05fcfaea091d07891b68732bb7a9b
 }
+
+
+

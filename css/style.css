@@ -1,20 +1,23 @@
+/* Estilos para el encabezado (header) */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-    padding: 10px;
-    background-color: #f8f8f8;
-    height: 100%;
+    display: flex; /* Usa Flexbox para colocar los elementos hijos en línea horizontalmente */
+    justify-content: space-between; /* Distribuye los elementos de manera que haya espacio entre ellos */
+    align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
+    width: 80%; /* El ancho del contenedor del encabezado ocupa el 80% del ancho disponible */
+    padding: 10px; /* Añade un espacio interior de 10px alrededor del contenido del encabezado */
+    background-color: #f8f8f8; /* Color de fondo gris muy claro para el encabezado */
+    height: 100%; /* Establece la altura del encabezado para que ocupe todo el espacio disponible */
 }
 
-.logo{
-    width: 50px;
+/* Estilos para el logo dentro del encabezado */
+.logo {
+    width: 50px; /* Define el ancho de la imagen del logo a 50px */
 }
 
-.titulo{
-    margin: 0;
-    font-size: 24px;
+/* Estilos para el título dentro del encabezado */
+.titulo {
+    margin: 0; /* Elimina cualquier margen alrededor del título */
+    font-size: 24px; /* Tamaño de fuente de 24px para que el título sea más grande */
 }
 
 .menu-lateral {
@@ -57,85 +60,91 @@
     background-color: #575757; /* Cambia el color de fondo del enlace al pasar el ratón a un gris oscuro (#575757) */
 }
 
-.contenido{
-    width: 100%;
-    margin-left: 22%;
-    padding: 40px;
-    color: black;
-    background-color: rgb(255, 255, 255, 0.8);
-    border-radius: 10px;
-    max-width: 800px;
+/* Estilos para la sección de contenido principal */
+.contenido {
+    width: 100%; /* El ancho del contenido ocupa el 100% del área disponible */
+    margin-left: 22%; /* Mueve el contenido hacia la derecha para dar espacio al menú lateral (22% del ancho de la ventana) */
+    padding: 40px; /* Añade un espacio interior de 40px alrededor del contenido */
+    color: black; /* Define el color del texto en negro */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad (transparente) */
+    border-radius: 10px; /* Bordes redondeados de 10px en el contenido */
+    max-width: 800px; /* Establece un ancho máximo de 800px para que el contenido no se extienda demasiado en pantallas grandes */
 }
 
-h1{
-    width: 150%;
-    background-color: red;
-    color: white;
-    padding: 10px;
-    margin-bottom: 20px;
+/* Estilos para el encabezado <h1> */
+h1 {
+    width: 150%; /* Hace que el ancho del encabezado sea más grande que el contenedor normal (150% del tamaño) */
+    background-color: red; /* Fondo rojo para el encabezado */
+    color: white; /* Texto en blanco */
+    padding: 10px; /* Añade un espacio interior de 10px alrededor del texto */
+    margin-bottom: 20px; /* Añade un espacio de 20px debajo del encabezado */
 }
 
-p{
-    font-size: 18px;
-    line-height: 1,6;
-    color: #333;
+/* Estilos para los párrafos <p> */
+p {
+    font-size: 18px; /* Tamaño de fuente de 18px para que el texto sea más grande */
+    line-height: 1.6; /* Define la altura de línea para mejorar la legibilidad del texto */
+    color: #333; /* Color del texto en un gris oscuro */
 }
 
-.botones{
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+/* Estilos para un contenedor de botones */
+.botones {
+    display: flex; /* Utiliza Flexbox para colocar los botones en fila horizontal */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Añade un espacio de 20px entre cada botón */
 }
 
-button{
-    padding: 15px 30px;
-    border: none;
-    border-radius: 70px;
-    font-size: 20px;
-    cursor: pointer;
+/* Estilos generales para los botones */
+button {
+    padding: 15px 30px; /* Espacio interior de 15px arriba/abajo y 30px a los lados */
+    border: none; /* Elimina el borde predeterminado de los botones */
+    border-radius: 70px; /* Bordes redondeados pronunciados, de 70px */
+    font-size: 20px; /* Tamaño de fuente de 20px */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es interactivo */
 }
 
-button.usuario{
-    background-color: #dddddd;
-    color: #333;
+/* Estilos específicos para el botón de "usuario" */
+button.usuario {
+    background-color: #dddddd; /* Fondo gris claro */
+    color: #333; /* Texto en gris oscuro */
 }
 
-button.admin{
-    background-color: #4caf50;
-    color: #fff;
+/* Estilos específicos para el botón de "admin" */
+button.admin {
+    background-color: #4caf50; /* Fondo verde */
+    color: #fff; /* Texto en blanco */
 }
 
 /* Estilos del cuerpo de la página */
 body {
-    height: 100vh;
-    background-image: url('tu-imagen-fondo.jpg'); /* Cambia esta ruta por la imagen que quieras usar */
-    background-size: cover; /* Asegura que la imagen de fondo cubra toda la pantalla */
-    background-position: center;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    height: 100vh; /* La altura del cuerpo ocupa el 100% de la vista de la pantalla */
+    background-image: url('tu-imagen-fondo.jpg'); /* Establece una imagen de fondo. Cambia 'tu-imagen-fondo.jpg' por la ruta de tu imagen */
+    background-size: cover; /* Hace que la imagen de fondo cubra completamente la pantalla, ajustándose si es necesario */
+    background-position: center; /* Centra la imagen de fondo en la pantalla */
+    display: flex; /* Usa Flexbox para alinear los elementos dentro del body */
+    justify-content: flex-start; /* Alinea los elementos horizontalmente al inicio (a la izquierda) */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
 }
 
-
-/* Contenido Central */
+/* Estilos del contenido central */
 .contenido {
-    margin-left: 270px; /* Espacio para que el contenido no se superponga con el menú */
-    padding: 40px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para destacar el texto */
-    border-radius: 10px;
-    max-width: 800px;
+    margin-left: 270px; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
+    padding: 40px; /* Añade un relleno de 40px alrededor del contenido */
+    color: white; /* Define el color del texto en blanco */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad, permitiendo ver parcialmente la imagen de fondo */
+    border-radius: 10px; /* Bordes redondeados de 10px en el contenido */
+    max-width: 800px; /* Define un ancho máximo de 800px para que el contenido no se expanda demasiado en pantallas grandes */
 }
 
-/* Estilos del título principal */
+/* Estilos del título principal dentro del contenido */
 .contenido h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-size: 3rem; /* Tamaño de fuente de 3 rem (aproximadamente 48px dependiendo de la configuración de la fuente base) */
+    margin-bottom: 20px; /* Añade un espacio de 20px debajo del título */
 }
 
-/* Estilos del párrafo */
+/* Estilos del párrafo dentro del contenido */
 .contenido p {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Tamaño de fuente de 1.2 rem (aproximadamente 19px, según la configuración de la fuente base) */
 }
 
 

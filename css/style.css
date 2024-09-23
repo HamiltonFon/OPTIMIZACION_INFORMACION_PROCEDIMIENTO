@@ -57,6 +57,7 @@ header {
     background-color: #575757; /* Cambia el color de fondo del enlace al pasar el ratón a un gris oscuro (#575757) */
 }
 
+/*SECCION DE CODIGO PARA EL CONTENIDO*/
 .contenido {
     flex-grow: 1; /* La sección de contenido ocupará el espacio restante después del menú lateral */
     margin-left: 12.5%; /* Mueve el contenido hacia la derecha para dejar espacio al menú lateral */
@@ -80,6 +81,7 @@ header {
     font-size: 1.2rem; /* Tamaño de fuente de 1.2 rem (aproximadamente 19px, según la configuración de la fuente base) */
 }
 
+/*SECCION DE CODIGO PARA LOS BOTONES*/
 footer {
     background-color: #f8f9fa; /* Color de fondo del footer */
     padding: 10px; /* Espaciado interno en el footer */

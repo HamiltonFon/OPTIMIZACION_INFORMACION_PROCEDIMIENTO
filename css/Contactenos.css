@@ -87,7 +87,6 @@ main {
 
 
 .contenido h1 {
-    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*cambiar el tipo de letra a usar*/
     text-align: center;
     font-size: 3rem; /* Tamaño de fuente de 3 rem (aproximadamente 48px dependiendo de la configuración de la fuente base) */
@@ -95,7 +94,6 @@ main {
 }
 
 .contenido p {
-    color: black;
     line-height: 2; /*Agregar espacio entre las lienas de texto*/
     font-size: 30px; /* Tamaño de fuente de 1.2 rem (aproximadamente 19px, según la configuración de la fuente base) */
     text-align:center;
@@ -103,6 +101,13 @@ main {
 
 /*SECCION DE CODIGO PARA LOS BOTONES*/
 footer {
+    background-color: #f8f9fa; /* Color de fondo del footer */
+    padding: 10px; /* Espaciado interno en el footer */
+    text-align: center; /* Centra el contenido dentro del footer */
+    margin-left: 11.5%; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
+}
+
+form{
     background-color: #f8f9fa; /* Color de fondo del footer */
     padding: 10px; /* Espaciado interno en el footer */
     text-align: center; /* Centra el contenido dentro del footer */

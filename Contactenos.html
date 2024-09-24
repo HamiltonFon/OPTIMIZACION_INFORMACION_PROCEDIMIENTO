@@ -1,100 +1,65 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/Contactenos.css">
+</head>
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Contacto - Barbería ALURA</title>
-        <link rel="stylesheet" href="estilos/reset.css">
-        <link rel="stylesheet" href="estilos/estiloGenerales.css">
-    </head>
+<body>
+    <header>
+        <img src="/img/UPV.jpg" alt="Logo Unidad" class="logo">
+    </header>
 
-    <body>
-        <header>
-            <div class="caja">
-                <h1><img src="imagenes/productos/logo.png" alt="Logo Barbería Alura"></h1>
-                <nav>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="productos.html">Productos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+    <!-- Menú Lateral -->
+    <nav class="menu-lateral">
+        <ul>
+            <li class="item_01"><a href="#inicio">Inicio</a></li>
+            <li><a href="Tableros.html">Tableros</a></li>
+            <li><a href="Contactenos.html">Contactenos</a></li>
+            <li><a href="#contacto">Sugerencias</a></li>
+        </ul>
+    </nav>
 
-        <main>
-            <form>
-                <label for="nombreApellido">Nombre y Apellido</label>
-                <input type="text" id="nombreApellido" class="inpunt-patron" required>
+    <form>
+        <label for="nombreApellido">Nombre y Apellido</label>
+        <input type="text" id="nombreApellido" class="inpunt-patron" required>
 
-                <label for="correoElectronico">Correo Electrónico</label>
-                <input type="email" id="correoElectronico" class="inpunt-patron" required placeholder="email@domnio.com">
+        <label for="correoElectronico">Correo Electrónico</label>
+        <input type="email" id="correoElectronico" class="inpunt-patron" required placeholder="email@domnio.com">
 
-                <label for="telefono">Celular</label>
-                <input type="tel" id="telefono" class="inpunt-patron" required placeholder="(código pais) número celular">
+        <label for="telefono">Celular</label>
+        <input type="tel" id="telefono" class="inpunt-patron" required placeholder="(código pais) número celular">
 
-                <label for="mensaje">Mensaje </label>
-                <textarea name="" id="" cols="70" rows="10" id="mensaje" class="inpunt-patron" required></textarea>
+        <label for="mensaje">Mensaje </label>
+        <textarea name="" id="" cols="70" rows="10" id="mensaje" class="inpunt-patron" required></textarea>
 
-                <fieldset>
-                    <legend>¿Comó le gustaría ser contactado?</legend>
+        <fieldset>
+            <legend>¿Comó le gustaría ser contactado?</legend>
 
-                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
-                    
+            <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
 
-                    <label for="radio-telefono"><input type="radio" name="contacto" value="email" id="radio-telefono">Teléfono</label>
-                    
 
-                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="email" id="radio-whatsapp" checked>WhatsApp</label>
-                    
-                </fieldset>
+            <label for="radio-telefono"><input type="radio" name="contacto" value="email" id="radio-telefono">Teléfono</label>
 
-                <fieldset>
-                    <legend>¿En cual horario desea ser atentido?</legend>
-                    <select>
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
-                    </select>
-                </fieldset>
-                
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería?</label>
 
-                <input type="submit" value="Enviar Formulario" class="enviar">
+            <label for="radio-whatsapp"><input type="radio" name="contacto" value="email" id="radio-whatsapp" checked>WhatsApp</label>
 
-            </form>
+        </fieldset>
 
-            <table>
+        <fieldset>
+            <legend>¿En cual horario desea ser atentido?</legend>
+            <select>
+                <option>Mañana</option>
+                <option>Tarde</option>
+                <option>Noche</option>
+            </select>
+        </fieldset>
 
-                <thead>
-                    <tr>
-                        <th>Día</th>
-                        <th>Horario</th>
-                   </tr>
-                </thead>
-               
-                <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>08AM - 08PM</td>
-                   </tr>
-                   <tr>
-                        <td>Miércoles</td>
-                        <td>08AM - 08PM</td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td>08AM - 08PM</td>
-                    </tr>
-                </tbody>
-                
-                
-            </table>
-        </main>
-        <footer>
-            <img src="imagenes/productos/logo-blanco.png" alt="Logo Barbería Alura">
-            <p class="Copyright">&copy Copyrigth Barberúa Alura - 2024</p>
-        </footer>
+        <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Barbería?</label>
+
+        <input type="submit" value="Enviar Formulario" class="enviar">
+
+    </form>
     </body>
-
-</html>

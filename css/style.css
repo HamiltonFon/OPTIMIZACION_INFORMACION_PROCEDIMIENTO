@@ -14,7 +14,7 @@ header {
     display: flex; /* Utiliza Flexbox para alinear los elementos dentro del header */
     align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
     width: calc(100% - 12.5%); /* Resta el ancho del menú lateral */
-    margin-left: 12.5%; /* Deja espacio para el menú lateral */
+    margin-left: 12%; /* Deja espacio para el menú lateral */
     background-color: #f8f9fa; /* Color de fondo del header */
     padding: 10px; /* Espaciado interno en el header */
     box-sizing: border-box; /* Incluye el padding en el ancho total del header */
@@ -36,6 +36,8 @@ header {
     position: fixed; /* Fija el menú lateral para que no se desplace */
     top: 0; /* Alinea el menú al borde superior de la ventana */
     left: 0; /* Alinea el menú al borde izquierdo */
+    border-right: 4px solid black; /* Borde negro solo en el lado derecho */
+    border-radius: 0px; /* Sin esquinas redondeadas */
 }
 
 .menu-lateral ul {
@@ -69,8 +71,8 @@ main {
 
 .contenido {
     flex-grow: 1; /* La sección de contenido ocupará el espacio restante después del menú lateral */
-    margin-left: 13%; /* Mueve el contenido hacia la derecha para dejar espacio al menú lateral */
-    padding: 40px; /* Añade un espacio interior de 40px alrededor del contenido */
+    margin-left: 12%; /* Mueve el contenido hacia la derecha para dejar espacio al menú lateral */
+    padding: 20px; /* Añade un espacio interior de 40px alrededor del contenido */
     color: black; /* Define el color del texto en negro */
     background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad (transparente) */
     border-radius: 10px; /* Bordes redondeados de 10px en el contenido */
@@ -91,7 +93,7 @@ main {
 }
 
 .contenido p {
-    line-height: 2.5; /*Agregar espacio entre las lienas de texto*/
+    line-height: 2; /*Agregar espacio entre las lienas de texto*/
     font-size: 30px; /* Tamaño de fuente de 1.2 rem (aproximadamente 19px, según la configuración de la fuente base) */
     text-align:center;
 }
@@ -101,7 +103,7 @@ footer {
     background-color: #f8f9fa; /* Color de fondo del footer */
     padding: 10px; /* Espaciado interno en el footer */
     text-align: center; /* Centra el contenido dentro del footer */
-    margin-left: 12.5%; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
+    margin-left: 11.5%; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
 }
 
 .botones {

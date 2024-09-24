@@ -1,0 +1,144 @@
+/*SECCION DE CODIGO ENCABEZADO*/
+html, body {
+    height: 100%; /* Asegura que el html y el body ocupen toda la altura de la ventana */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex; /* Utiliza Flexbox para organizar los elementos hijos en una columna */
+    flex-direction: column; /* Alinea los elementos hijos en una columna */
+}
+
+header {
+    display: flex; /* Utiliza Flexbox para alinear los elementos dentro del header */
+    align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
+    width: calc(100% - 12.5%); /* Resta el ancho del menú lateral */
+    margin-left: 12%; /* Deja espacio para el menú lateral */
+    background-color: #f8f9fa; /* Color de fondo del header */
+    padding: 10px; /* Espaciado interno en el header */
+    box-sizing: border-box; /* Incluye el padding en el ancho total del header */
+}
+
+.logo {
+    width: 100%; /* La imagen del logo ocupará todo el ancho del header */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0; /* Elimina el margen para que la imagen ocupe todo el espacio */
+}
+
+/*SECCION DE CODIGO PARA EL MENU LATERAL*/
+.menu-lateral {
+    width: 12.5%; /* Ancho del menú lateral */
+    height: 100vh; /* Altura del menú lateral ocupando toda la ventana */
+    background-image: url(/img/Bandera_colombia.png); /* Ruta de la imagen que quieres usar */
+    background-size: cover; /* Hace que la imagen cubra todo el menú */
+    background-position: center; /* Centra la imagen en el menú */
+    position: fixed; /* Fija el menú lateral para que no se desplace */
+    top: 0; /* Alinea el menú al borde superior de la ventana */
+    left: 0; /* Alinea el menú al borde izquierdo */
+    border-right: 4px solid black; /* Borde negro solo en el lado derecho */
+    border-radius: 0px; /* Sin esquinas redondeadas */
+}
+
+.menu-lateral ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados (viñetas o números) */
+    padding-left: 5px; /* Elimina cualquier relleno en el lado izquierdo del contenedor */
+    padding-right: 5px; /* Añade espacio a la derecha del contenido del menú */
+}
+
+.menu-lateral ul li {
+    margin: 70% 0px; /* Añade un margen vertical de 90px entre cada elemento de la lista */
+}
+
+.menu-lateral ul li a {
+    color: white; /* Define el color del texto de los enlaces como blanco */
+    text-decoration: none; /* Elimina el subrayado predeterminado de los enlaces */
+    padding: 10px 10px; /* Añade un relleno interno de 10px en la parte superior/inferior y 20px en los lados del enlace */
+    display: block; /* Hace que los enlaces se comporten como bloques, ocupando todo el ancho del contenedor */
+    transition: background 0.5s; /* Añade una transición suave de 0.5 segundos al cambiar el fondo al hacer hover */
+    text-align: center; /* Centra el texto dentro de los enlaces */
+}
+
+.menu-lateral ul li a:hover {
+    background-color: #575757; /* Cambia el color de fondo del enlace al pasar el ratón a un gris oscuro (#575757) */
+}
+
+
+
+
+/*SECCION LOGIN*/
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Tipografía general */
+    background-color: #f4f4f4; /* Color de fondo del cuerpo */
+    position: relative; /* Para permitir la superposición del formulario */
+}
+
+/* Contenedor del formulario */
+.login-container {
+    position: absolute; /* Permite superponer el formulario */
+    width: 300px; /* Ancho del contenedor */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: #fff; /* Fondo blanco para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle un efecto de elevación */
+    border-radius: 8px; /* Bordes redondeados */
+    margin-left: 67%; /* Deja espacio para el menú lateral */
+    transform: translateY(-130%); /* Ajusta el formulario para que quede centrado */
+    
+}
+
+/* Estilo del formulario */
+.login-form {
+    display: flex; /* Usamos flexbox para organizar los elementos del formulario */
+    flex-direction: column; /* Colocamos los elementos en una columna (uno debajo del otro) */
+}
+
+/* Estilo del título del formulario */
+.login-form h2 {
+    text-align: center; /* Centra el texto del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 24px; /* Tamaño de la fuente del título */
+}
+
+/* Estilo para los campos de entrada (usuario y contraseña) */
+.login-form input {
+    padding: 10px; /* Espacio interno de los campos de texto */
+    margin-bottom: 15px; /* Espacio entre cada campo */
+    border: 1px solid #ccc; /* Borde gris claro para los campos */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente dentro de los campos */
+}
+
+/* Estilo del botón */
+.login-form button {
+    padding: 10px; /* Espaciado interno del botón */
+    background-color: #4caf50; /* Color de fondo verde del botón */
+    color: white; /* Texto del botón en blanco */
+    border: none; /* Sin borde en el botón */
+    border-radius: 4px; /* Bordes redondeados del botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando pasa sobre el botón */
+    font-size: 16px; /* Tamaño de la fuente del texto dentro del botón */
+}
+
+/* Efecto hover en el botón cuando se pasa el ratón por encima */
+.login-form button:hover {
+    background-color: #45a049; /* Cambia el color de fondo cuando el mouse pasa sobre el botón */
+}
+
+
+
+.contenido {
+    flex-grow: 1; /* La sección de contenido ocupará el espacio restante después del menú lateral */
+    margin-left: 12%; /* Mueve el contenido hacia la derecha para dejar espacio al menú lateral */
+    padding: 20px; /* Añade un espacio interior de 40px alrededor del contenido */
+    color: black; /* Define el color del texto en negro */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad (transparente) */
+    border-radius: 10px; /* Bordes redondeados de 10px en el contenido */
+    background-image: url(/img/UPV_Señora_Mayor.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la sección */
+
+}

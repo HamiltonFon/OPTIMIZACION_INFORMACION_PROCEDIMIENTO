@@ -14,6 +14,7 @@ header {
     display: flex; /* Utiliza Flexbox para alinear los elementos dentro del header */
     align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
     width: calc(100% - 12.5%); /* Resta el ancho del menú lateral */
+    height: 22%;
     margin-left: 12%; /* Deja espacio para el menú lateral */
     background-color: #f8f9fa; /* Color de fondo del header */
     padding: 10px; /* Espaciado interno en el header */
@@ -80,23 +81,24 @@ main {
     background-image: url(/img/UPV_Asesoria.jpg); /* Ruta de la imagen de fondo */
     background-size: cover; /* Asegura que la imagen cubra toda la sección */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center; /* Centra la imagen en la sección */
+    background-position: top; /* Acomoda la imagen en la sección */
     color: white; /* Cambia el color del texto para que sea visible sobre la imagen */
     height: 70%; /* Altura en porcentaje del contenedor padre */
 }
 
 
 .contenido h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /*cambiar el tipo de letra a usar*/
-    text-align: center;
-    font-size: 3rem; /* Tamaño de fuente de 3 rem (aproximadamente 48px dependiendo de la configuración de la fuente base) */
+    font-family: Arial, Helvetica, sans-serif; /*cambiar el tipo de letra a usar*/
+    text-align:left;
+    font-size: 4rem; /* Tamaño de fuente de 3 rem (aproximadamente 48px dependiendo de la configuración de la fuente base) */
+    margin-top: 10px;
     margin-bottom: 20px; /* Añade un espacio de 20px debajo del título */
-}
-
-.contenido p {
-    line-height: 2; /*Agregar espacio entre las lienas de texto*/
-    font-size: 30px; /* Tamaño de fuente de 1.2 rem (aproximadamente 19px, según la configuración de la fuente base) */
-    text-align:center;
+    margin-left: 50px;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    -2px -2px 0 #000,
+    -2px  2px 0 #000,
+     2px  2px 0 #000; /* Sombra para crear el borde negro */
 }
 
 /*SECCION DE CODIGO PARA LOS BOTONES*/
@@ -107,36 +109,63 @@ footer {
     margin-left: 11.5%; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
 }
 
-form{
-    background-color: #f8f9fa; /* Color de fondo del footer */
-    padding: 10px; /* Espaciado interno en el footer */
-    text-align: center; /* Centra el contenido dentro del footer */
-    margin-left: 11.5%; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
+form {
+    background-color: #f8f9fa; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interno en el formulario */
+    text-align: left; /* Alinea el contenido del formulario a la izquierda */
+    margin-left: 15%; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
+    margin-right: 5%; /* Mueve el contenido hacia la izquierda para dejar espacio para el menú lateral */
+    margin-top: 2%; /* Mueve el contenido hacia abajo, para dejar un espacio para el formulario */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra para darle profundidad */
 }
 
-.botones {
-    display: flex; /* Utiliza Flexbox para colocar los botones en fila horizontal */
-    justify-content: center; /* Centra los botones horizontalmente */
-    gap: 40px; /* Añade un espacio de 40px entre cada botón */
-    padding: 10px; /* Añade un relleno de 40px alrededor del contenido */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad, permitiendo ver parcialmente la imagen de fondo */
-    border-radius: 10px; /* Bordes redondeados de 10px en el contenido */
+.form-row {
+    display: flex; /* Utiliza Flexbox para organizar los elementos en una fila */
+    gap: 80px; /* Espacio entre los elementos de la fila */
 }
 
-button {
-    padding: 10px 30px; /* Espacio interior de 15px arriba/abajo y 30px a los lados */
-    border: none; /* Elimina el borde predeterminado de los botones */
-    border-radius: 70px; /* Bordes redondeados pronunciados, de 70px */
-    font-size: 20px; /* Tamaño de fuente de 20px */
-    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es interactivo */
+.form-group {
+    flex: 1; /* Cada grupo de formulario ocupará el mismo espacio */
+    margin-bottom: 15px; /* Espacio debajo de cada grupo de formulario */
 }
 
-button.usuario {
-    background-color: #dddddd; /* Fondo gris claro */
-    color: #333; /* Texto en gris oscuro */
+.form-group label {
+    display: block; /* Hace que las etiquetas se comporten como bloques */
+    margin-bottom: 15px; /* Espacio debajo de las etiquetas */
+    font-weight: bold; /* Hace que las etiquetas sean negritas */
 }
 
-button.admin {
-    background-color: #dddddd; /* Fondo gris claro */
-    color: #333; /* Texto en gris oscuro */
+.form-group input[type="text"], .form-group textarea {
+    width: 100%; /* Los campos ocupan todo el ancho del formulario */
+    padding: 10px; /* Espaciado interno en los campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+form button {
+    width: 10%; /* El botón ocupa todo el ancho del formulario */
+    padding: 10px; /* Espaciado interno en el botón */
+    margin-left: 80%;
+    background-color: #2c2c2c; /* Color de fondo azul */
+    color: white; /* Color del texto en blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Color de fondo azul oscuro al pasar el ratón */
+}
+
+.info-contacto {
+    margin-top: 20px; /* Espacio encima de la información de contacto */
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid #d9d9d9;
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto de la información de contacto */
+    color: #333; /* Color del texto */
 }

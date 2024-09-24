@@ -14,6 +14,7 @@ header {
     display: flex; /* Utiliza Flexbox para alinear los elementos dentro del header */
     align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
     width: calc(100% - 12.5%); /* Resta el ancho del menú lateral */
+    height: 22%;
     margin-left: 12%; /* Deja espacio para el menú lateral */
     background-color: #f8f9fa; /* Color de fondo del header */
     padding: 10px; /* Espaciado interno en el header */
@@ -85,7 +86,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para darle un efecto de elevación */
     border-radius: 8px; /* Bordes redondeados */
     margin-left: 20%; /* Deja espacio para el menú lateral */
-    transform: translateY(-115%); /* Ajusta el formulario para que quede centrado */
+    transform: translateY(-130%); /* Ajusta el formulario para que quede centrado */
     
 }
 

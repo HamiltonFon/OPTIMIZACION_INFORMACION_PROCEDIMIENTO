@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-    width: 100%; /* La imagen del logo ocupará todo el ancho del header */
+    width: 102%; /* La imagen del logo ocupará todo el ancho del header */
     height: auto; /* Mantiene la proporción de la imagen */
     display: block; /* Hace que la imagen se comporte como un bloque */
     margin: 0; /* Elimina el margen para que la imagen ocupe todo el espacio */

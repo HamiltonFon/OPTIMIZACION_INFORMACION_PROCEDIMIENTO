@@ -91,11 +91,11 @@ main {
     font-family: Arial, Helvetica, sans-serif; /*cambiar el tipo de letra a usar*/
     text-align:left;
     font-size: 4rem; /* Tamaño de fuente de 3 rem (aproximadamente 48px dependiendo de la configuración de la fuente base) */
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 20px; /* Añade un espacio de 20px debajo del título */
     margin-left: 50px;
-    text-shadow: 
-    -2px -2px 0 #000,  
+    text-shadow:
+    -2px -2px 0 #000,
     -2px -2px 0 #000,
     -2px  2px 0 #000,
      2px  2px 0 #000; /* Sombra para crear el borde negro */
@@ -107,6 +107,14 @@ main {
     font-size: 30px; /* Tamaño de fuente de 1.2 rem (aproximadamente 19px, según la configuración de la fuente base) */
     text-align:center;
 }
+
+.tablero{
+    width: 60%;
+    margin-left: 20%;
+    border-radius: 15px;
+    border: 5px solid #7c7c7d;
+}
+
 
 /*SECCION DE CODIGO PARA LOS BOTONES*/
 footer {

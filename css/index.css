@@ -106,12 +106,13 @@ footer {
     padding: 10px; /* Espaciado interno en el footer */
     text-align: center; /* Centra el contenido dentro del footer */
     margin-left: 11.5%; /* Mueve el contenido hacia la derecha para dejar espacio para el menú lateral */
+    width: 88%; /* La imagen del logo ocupará todo el ancho del header */
 }
 
 .botones {
     display: flex; /* Utiliza Flexbox para colocar los botones en fila horizontal */
     justify-content: center; /* Centra los botones horizontalmente */
-    gap: 40px; /* Añade un espacio de 40px entre cada botón */
+    gap: 20%; /* Añade un espacio de 40px entre cada botón */
     padding: 10px; /* Añade un relleno de 40px alrededor del contenido */
     background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad, permitiendo ver parcialmente la imagen de fondo */
     border-radius: 10px; /* Bordes redondeados de 10px en el contenido */

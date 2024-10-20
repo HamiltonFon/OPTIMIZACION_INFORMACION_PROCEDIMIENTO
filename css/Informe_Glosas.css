@@ -162,7 +162,7 @@
     .power_bi{
         text-align: center;
         margin: auto;
-        max-width: 90%;
+        max-width: 70%;
         border: 5px solid grey;
         box-shadow: 0 0 20px rgba(0,0,0,3);
     }

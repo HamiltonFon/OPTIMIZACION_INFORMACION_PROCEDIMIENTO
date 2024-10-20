@@ -157,12 +157,7 @@
         padding: 10px; /* Espaciado interno en el header */
         align-items: center; /* Alinea verticalmente al centro */
         justify-content: center; /* Ajusta para alinear los elementos según sea necesario */  
-    }
-
-    /* Frase */
-    .COPYRIGTH {
-        text-align: left; /* Alinea el texto a la derecha */
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        height: 14%; /* Ajusta este valor para cambiar la altura vertical */
     }
 
     /* Frase */
@@ -175,6 +170,6 @@
     .Logo_V {
         display: block; /* Hace que la imagen se comporte como un bloque */
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        width: 8%; /* Establece el ancho de la imagen */
+        width: 6%; /* Establece el ancho de la imagen */
         height: auto; /* Mantiene la relación de aspecto original */
     }

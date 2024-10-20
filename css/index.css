@@ -90,7 +90,6 @@
     /*CONTENIDO*/
     .CONTENIDO 
     {   
-
         position: relative; /* Para posicionar el pseudo-elemento correctamente */
         color: rgb(0, 0, 0); /* Define el color del texto en negro */
         background-image: url(../img/Fondo.jpg); /* Ruta de la imagen de fondo */
@@ -101,8 +100,7 @@
         display: flex; /* Utiliza flexbox para alinear elementos dentro del contenido */
         flex-direction: column; /* Alinea los elementos en columna */
         justify-content: space-between; /* Espacia los elementos dentro del contenido */
-        
-
+    
     }
 
     /* Estilos para el contenedor semitransparente */
@@ -115,6 +113,7 @@
         margin: 0 auto; /* Centra el contenedor horizontalmente */
         padding-top: 0px; /* Ajusta el padding solo en la parte superior */
         padding-bottom: 0px; /* Ajusta el padding solo en la parte inferior */
+        height: 23%; /* Ajusta este valor para cambiar la altura vertical */
     }
 
 
@@ -156,13 +155,8 @@
         color: rgb(90, 90, 90); /* Define el color del texto en negro */
         padding: 10px; /* Espaciado interno en el header */
         align-items: center; /* Alinea verticalmente al centro */
-        justify-content: center; /* Ajusta para alinear los elementos según sea necesario */  
-    }
-
-    /* Frase */
-    .COPYRIGTH {
-        text-align: left; /* Alinea el texto a la derecha */
-        font-size: 0.8rem; /* Tamaño de fuente más pequeño */
+        justify-content: center; /* Ajusta para alinear los elementos según sea necesario */ 
+        height: 14%; /* Ajusta este valor para cambiar la altura vertical */
     }
 
     /* Frase */
@@ -175,6 +169,6 @@
     .Logo_V {
         display: block; /* Hace que la imagen se comporte como un bloque */
         margin: 0 auto; /* Centra la imagen horizontalmente */
-        width: 8%; /* Establece el ancho de la imagen */
+        width: 6%; /* Establece el ancho de la imagen */
         height: auto; /* Mantiene la relación de aspecto original */
     }

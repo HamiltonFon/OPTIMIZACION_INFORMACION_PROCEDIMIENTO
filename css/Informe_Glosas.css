@@ -159,6 +159,9 @@
         justify-content: center; /* Ajusta para alinear los elementos según sea necesario */  
     }
 
+    .power_bi{
+        margin: 100px;
+    }
     /* Frase */
     .COPYRIGTH {
         text-align: left; /* Alinea el texto a la derecha */

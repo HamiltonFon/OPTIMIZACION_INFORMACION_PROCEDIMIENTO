@@ -156,7 +156,7 @@
         padding: 10px; /* Espaciado interno en el header */
         align-items: center; /* Alinea verticalmente al centro */
         justify-content: center; /* Ajusta para alinear los elementos según sea necesario */ 
-        height: 10%; /* Ajusta este valor para cambiar la altura vertical */
+        height: 14%; /* Ajusta este valor para cambiar la altura vertical */
     }
 
     /* Frase */

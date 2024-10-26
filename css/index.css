@@ -96,11 +96,11 @@
         background-size: cover; /* Asegura que la imagen cubra toda la sección */
         background-repeat: no-repeat; /* Evita que la imagen se repita */
         background-position: center; /* Centra la imagen en la sección */
-        height: calc(100%); /* Altura del contenedor principal, ajustada para ocupar el espacio disponible */
+        min-height: 100vh; /* Asegura que la altura mínima sea la de la pantalla completa */
+        height: 100%; /* Ocupa todo el espacio disponible */
         display: flex; /* Utiliza flexbox para alinear elementos dentro del contenido */
         flex-direction: column; /* Alinea los elementos en columna */
         justify-content: space-between; /* Espacia los elementos dentro del contenido */
-    
     }
 
     /* Estilos para el contenedor semitransparente */

@@ -11,10 +11,10 @@ html, body {
 }
 
 header {
-    display: flex; /* Utiliza Flexbox para alinear los elementos dentro del header */   
+    display: flex; /* Utiliza Flexbox para alinear los elementos dentro del header */
+    align-items: center; /* Alinea verticalmente los elementos en el centro del contenedor */
     background-color: rgba(255, 255, 255, 0.514); /* Color de fondo semitransparente */
     padding: 10px; /* Espaciado interno en el header */
-    margin-bottom: 2%;
 }
 
 .CPV {
@@ -22,7 +22,6 @@ header {
 }
 
 .TITULO {
-    text-align: center; /* Centra el texto del título */
     flex-grow: 1; /* Permite que el título ocupe todo el espacio restante entre los logos */
     margin: 0; /* Elimina márgenes del título */
     color: rgb(90, 90, 90); /* Define el color del texto en negro */

@@ -87,22 +87,18 @@
     }
 
 
-    /*CONTENIDO*/
-    .CONTENIDO 
-    {   
-
-        position: relative; /* Para posicionar el pseudo-elemento correctamente */
-        color: rgb(0, 0, 0); /* Define el color del texto en negro */
-        background-image: url(../img/Fondo.jpg); /* Ruta de la imagen de fondo */
-        background-size: cover; /* Asegura que la imagen cubra toda la sección */
-        background-repeat: no-repeat; /* Evita que la imagen se repita */
-        background-position: center; /* Centra la imagen en la sección */
-        height: calc(100%); /* Altura del contenedor principal, ajustada para ocupar el espacio disponible */
-        display: flex; /* Utiliza flexbox para alinear elementos dentro del contenido */
-        flex-direction: column; /* Alinea los elementos en columna */
-        justify-content: space-between; /* Espacia los elementos dentro del contenido */
-        
-
+/*CONTENIDO*/
+.CONTENIDO {   
+    position: relative; /* Para posicionar el pseudo-elemento correctamente */
+    color: rgb(0, 0, 0); /* Define el color del texto en negro */
+    background-image: url(../img/Fondo.jpg); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en la sección */
+    height: calc(100%); /* Altura del contenedor principal, ajustada para ocupar el espacio disponible */
+    display: flex; /* Utiliza flexbox para alinear elementos dentro del contenido */
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: space-between; /* Espacia los elementos dentro del contenido */
     }
 
     /* Estilos para el contenedor semitransparente */

@@ -11,8 +11,8 @@
     }
 
     body {
-        display: flex; /* Utiliza Flexbox para organizar los elementos hijos en una columna */
-        flex-direction: column; /* Alinea los elementos hijos en una columna */
+        flex-direction: column;
+        min-height: 100vh;
     }
 
     header {
